@@ -1,5 +1,21 @@
 @import "tailwindcss";
+@import "tailwindcss";
 @plugin "daisyui";
+
+/* কাস্টম রিসেট */
+/* *, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -69,4 +85,3 @@ button:focus-visible {
   }
 } */
 
-@import "tailwindcss";

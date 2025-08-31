@@ -92,5 +92,21 @@ export const promotionalOfferProducts = [
     image: "https://images.unsplash.com/photo-1629581904078-15b8f382e7f3?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: 5000,
     oldPrice:5750},
+          {
+    id: 1,
+    name: "Compost & Soil",
+    description: "Organic compost, manure, soil mixes, and vermicompost.",
+    image: "https://plus.unsplash.com/premium_photo-1664527009212-73e907133b02?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 250 ,
+    oldPrice: 320
+},
+  {
+    id: 2,
+    name: "Irrigation & Water Systems",
+    description: "Drip irrigation, sprinklers, pumps, and water storage solutions.",
+    image: "https://media.istockphoto.com/id/1284395653/photo/irrigation-water-flow-from-pipe-to-canal-for-agriculture-fields-slow-motion-water-flash.jpg?s=2048x2048&w=is&k=20&c=1etQ5ctczyxosqFbOqXSh9nd89UrGu1fvZjtXAYFQcE=",
+    price: 2500,
+    oldPrice: 3000
+},
 
 ]

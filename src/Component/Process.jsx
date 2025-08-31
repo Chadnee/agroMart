@@ -8,8 +8,8 @@ import { ImArrowRight } from "react-icons/im";
 //bg-[#e5e2d2]
 
 const Process = () => {
-    return (<div className=' bg-sky-100 py-12'>
-        <div className='w-11/12 mx-auto mb-20 md:flex lg:flex justify-center items-center gap-10'>
+    return (<div className=' bg-sky-100 py-20'>
+        <div className='w-11/12 mx-auto grid md:grid-cols-3 lg:grid-cols-5 grid-cols-1 justify-center items-center md:gap-10 lg:md:gap-10 gap-6'>
                <div className='flex flex-col items-center mx-auto text-center text-[15px] justify-center'>
                  <img src={browser} className='h-[100px]' alt="" />
                 <p className=' text-cyan-600'>Browse & Select Products</p>
