@@ -7,6 +7,7 @@ import Process from "../Component/Process";
 import Footer from "../Component/Footer";
 import Highlights from "../Component/Highlights";
 import Overview from "../Component/Overview";
+import Trial from "../Component/trial";
 
 const MainLayout = () => {
     return (
@@ -16,6 +17,7 @@ const MainLayout = () => {
             <PromotionalOffer></PromotionalOffer>
             <Category></Category>
             <Overview></Overview>
+            <Trial></Trial>
             <Process></Process>
             <Footer></Footer>
             <Highlights></Highlights>
