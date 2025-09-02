@@ -2,11 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
-const Overview = () => {
+const About = () => {
   return (
-   <div className="">
+   <div className="" id="about">
      <div className="flex mb-28 flex-col items-center mt-28 lg:w-6/12 md:w-6/12 justify-center lg:mx-auto md:mx-auto mx-3">
-      <p className="pb-2 font-bold text-2xl font-serif">Overview</p>
+      <p className="pb-2 font-bold text-2xl font-serif">About</p>
       <span className="pb-4 italic font-thin text-sm text-[#3d6b08]">
         --“Trusted Products for Better Harvests”--
       </span>
@@ -27,5 +27,5 @@ const Overview = () => {
   );
 };
 
-export default Overview;
+export default About;
 

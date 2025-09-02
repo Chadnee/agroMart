@@ -6,10 +6,11 @@ import Button from '../share/Button/Button';
 
 const Hero = () => {
     return (
-        <div className='relative w-full mb-20'>
-                <img src={img} className='w-full object-cover h-[650px]' alt="" />
-            <div className=' bg-gradient-to-tr via-stone-500 from-black/30 to-transparent absolute inset-0 '></div>
-          <div className='absolute inset-0 text-white space-y-5 text-center flex flex-col mx-auto items-center justify-center'>
+        <div className='relative w-full mb-20' id='hero'>
+                <img src={img} className='w-full object-cover max-h-screen' alt="" />
+            {/* <div className=' bg-gradient-to-tr via-stone-500 from-black/30 to-transparent absolute inset-0 '></div> */}
+            <div className=' bg-gradient-to-tr   to-transparent  absolute inset-0 '></div>
+          <div className='absolute inset-0 text-white space-y-5  text-center flex flex-col mx-auto items-center justify-center'>
              <p className='text-3xl font-sans uppercase font-bold pb-3'>  Grow Better, Harvest More<br />
   Organic Compost & Fertilizers Firm</p>
              <p className='text-sm md:block lg:block hidden'>Your one-stop solution for fertilizers, compost, and essential agri-products — now delivered to your doorstep with ease and reliability. <br /> Your trusted partner for fertilizers, compost, and essential agri-products. 
