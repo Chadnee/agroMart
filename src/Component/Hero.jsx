@@ -18,7 +18,7 @@ Join thousands of <br /> farmers choosing smarter agriculture today.
 Now shop online and get everything delivered straight to your doorstep.</p>
             {/* <button className='border hover hover:bg-green-600 border-[#eec10e] px-5 rounded-md py-1'>Shop now</button> */}
            <button style={{letterSpacing: ".5px"}}
-            className='relative px-10 text-[17px] py-1 overflow-hidden border-2 border-[#caab2d] text-white rounded-md shadow-lg transition-colors
+            className='relative px-10 text-[17px] py-1 overflow-hidden  bg-amber-800 text-white rounded-md shadow-lg transition-colors
             duration-1000 easy-in-out hover:bg-yellow-600 hover:shadow-lg hover:scale-105'
            >
             Shop now
