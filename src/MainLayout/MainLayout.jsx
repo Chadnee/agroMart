@@ -13,7 +13,7 @@ const MainLayout = () => {
     return (
         <div className="">
             <Navbar ></Navbar>
-            <Hero id = "hero"></Hero>
+            <Hero id = "home"></Hero>
             <PromotionalOffer></PromotionalOffer>
             <Category id = "category"></Category>
             <About id = "about"></About>
