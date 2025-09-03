@@ -5,6 +5,7 @@ import { FaHome, FaList } from "react-icons/fa";
 import { TbCategory2 } from "react-icons/tb";
 import { SiProcesswire } from "react-icons/si";
 import { FaFaceLaughBeam } from "react-icons/fa6";
+import { IoFlashSharp } from "react-icons/io5";
 
 const Navbar = () => {
   const [openSubmenu, setOpenSubMenu] = useState(false); // kept as boolean as you wanted
@@ -36,6 +37,7 @@ const Navbar = () => {
   const navItem = [
     { id: "home", label: "Home", icon: <FaHome /> },
     { id: "category", label: "Category", icon: <TbCategory2 /> },
+     { id: "flashSale", label: "Flash Sale", icon: <IoFlashSharp/> },
     {
       id: "overview",
       label: "Overview",
@@ -72,10 +74,7 @@ const Navbar = () => {
                         <li key={sub.id}>
                           <a
                             className="text-[#1e4f68] flex gap-1 items-center cursor-pointer"
-                            smooth={true}
-                            duration={500}
-                            offset={-80}
-                            href={`#${sub.id}`}
+                             href={`#${sub.id}`}
                           >
                             <span>{sub.icon}</span>
                             <span>{sub.label}</span>
@@ -88,10 +87,7 @@ const Navbar = () => {
               ) : (
                 <a
                   className="text-[#1e4f68] font-semibold flex gap-1 items-center cursor-pointer"
-                  smooth={true}
-                  duration={500}
-                  to={item.id} // added proper `to` attribute
-                  offset={-80}
+                
                   href={`#${item.id}`}
                 >
                   <span>{item.icon}</span>
@@ -109,13 +105,13 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className="block md:hidden lg:hidden relative w-full" ref={toggleRef}>
+      <div className="block md:hidden lg:hidden relative w-full" >
         <button onClick= {() => setToggle((prev) => !prev)} className="cursor-pointer pl-3">
           <FaList></FaList>
         </button>
         {
             toggle && 
-            <div className="absolute -top-3 min-h-3/4 left-0 min-w-screen  z-50  text-[#1e4f68] shadow-lg bg-gradient-to-tr from-[#4b73b0] via-[#77bee1] to-[#26a7ed]">
+            <div ref={toggleRef} className="absolute -top-3 min-h-3/4 left-0 min-w-screen  z-50  text-[#1e4f68] shadow-lg bg-gradient-to-tr from-[#4b73b0] via-[#77bee1] to-[#26a7ed]">
           <ul className="flex flex-col w-full gap-3">
             {navItem.map((item) => (
               <li className="relative px-6 py-2 cursor-pointer" key={item.id}>
@@ -137,12 +133,8 @@ const Navbar = () => {
                             className="cursor-pointer"
                           >
                              <a
-                      smooth={true}
-                      duration={500}
-                      to={item.id} // added proper `to` attribute
-                      offset={-80}
                       href={`#${sub.id}`}
-                      className="text-[#1e4f68] cursor-pointer font-semibold w-full flex gap-48 cursor-pointer py-2 items-center"
+                      className="text-[#1e4f68] font-semibold w-full flex gap-48 cursor-pointer py-2 items-center"
                     >
                       <span>{sub.label}</span>
                       <span>{sub.icon}</span>
@@ -155,10 +147,7 @@ const Navbar = () => {
                 ) : (
                   <div>
                     <a
-                      smooth={true}
-                      duration={500}
-                      to={item.id} // added proper `to` attribute
-                      offset={-80}
+                     
                       href={`#${item.id}`}
                       className="text-[#1e4f68] font-semibold w-full flex gap-48 cursor-pointer py-2 items-center"
                     >

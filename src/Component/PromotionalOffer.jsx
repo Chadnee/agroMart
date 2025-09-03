@@ -4,10 +4,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import useProduct from "./hooks/useProduct";
 
 const PromotionalOffer = () => {
+      const [product] = useProduct()
+
   return (
-    <div className="flex flex-col mt-28 items-center lg:mx-auto md:mx-auto md:w-4/5 lg:w-4/5 w-4/5 mx-auto justify-center">
+    <div className="flex flex-col lg:mt-28 md:mt-28 mt-20 items-center lg:mx-auto md:mx-auto md:w-3/5 lg:w-4/5 w-3/5 mx-auto justify-center">
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
@@ -17,7 +20,7 @@ const PromotionalOffer = () => {
           breakpoints={{
     320: {       // screens >= 320px
       slidesPerView: 1,
-      spaceBetween: 5,
+      spaceBetween: 10,
     },
     640: {       // screens >= 640px
       slidesPerView: 2,
@@ -29,7 +32,7 @@ const PromotionalOffer = () => {
     },
   }}
       >
-        {promotionalOfferProducts.map((item) => (
+        {product.slice(0,6).map((item) => (
           <SwiperSlide key={item.id} className="flex justify-center">
             <div className="shadow-lg transition-shadow w-full ">
               <p
@@ -39,17 +42,17 @@ const PromotionalOffer = () => {
                   borderBottomLeftRadius: "10px",
                   borderBottomRightRadius: "10px",
                 }}
-                className="bg-amber-800 text-white w-full text-center px-5 py-2 text-2xl font-sans font-bold"
+                className="bg-amber-800 text-white w-full text-center px-5 py-2 lg:text-2xl md:text-2xl text-[16px] font-sans font-bold"
               >
                 {Math.round(((item.oldPrice - item.price) * 100) / item.oldPrice)}% OFF
               </p>
 
-              <div className="p-10 h-[400px] flex flex-col items-center ">
-                <img src={item.image} className="h-[200px]" alt={item.name} />
+              <div className="lg:p-10 md:p-10 p-7 flex flex-col items-center ">
+                <img src={item.image} className="lg:h-[200px] md:h-[200px] h-[80px]" alt={item.name} />
                 <p className="text-center text-sm font-semibold p-4">{item.name}</p>
                  <p className="text-sm pb-2"><del className="text-stone-600">{item.oldPrice}</del></p>
                 <p className="text-sm "><span className="text-amber-400 pr-1">{item.price}</span> BDT</p>
-                <p className="bg-amber-800 text-white px-5 py-1 mt-5 text-xl rounded-md font-sans font-bold">
+                <p className="bg-amber-800 text-white px-5 py-1 mt-5 md:text-xl lg:text-xl text-sm rounded-md font-sans font-bold">
                   Get
                 </p>
               </div>
