@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FlashCard = ({items}) => {
     console.log(items)
@@ -11,9 +12,11 @@ const FlashCard = ({items}) => {
                 <span><span className="text-amber-400 pr-1">{items.price}</span>BDT</span>
                 <span className='text-stone-500'><del>{items.oldPrice}</del></span>
                </p>
-                <p className="bg-cyan-600 text-white px-5 py-1 mt-5 rounded-md font-sans font-bold">
+               <Link to={`/products/${items._id}`}>
+                <button className="bg-cyan-600 text-white px-5 py-1 mt-5 rounded-md font-sans font-bold">
                   Buy
-                </p>
+                </button>
+               </Link>
               </div>
         </div>
     );

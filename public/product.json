@@ -1,102 +1,112 @@
 [
   {
     "id": 1,
-    "name": "Fertilizers & Nutrients",
-    "description": "Organic and chemical fertilizers, soil enhancers, and growth supplements.",
-    "image": "https://plus.unsplash.com/premium_photo-1748176934921-bb88b4d92fd5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": 800,
-    "oldPrice": 1000,
-    "rating": 4.5,
-    "quality": "Premium"
+    "name": "vermicompost",
+    "description": "This high-quality vermicompost is made from carefully processed organic matter, enriched with essential nutrients to boost soil fertility. Ideal for gardens, farms, and potted plants, it enhances soil structure and promotes healthy plant growth. Perfect for sustainable and eco-friendly farming practices.",
+    "image": "https://plus.unsplash.com/premium_photo-1664527009212-73e907133b02?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 250,
+    "oldPrice": 320,
+    "quality": "High",
+    "ratings": 4.5,
+    "category": "Compost & Soil"
   },
   {
     "id": 2,
-    "name": "Seeds & Plants",
-    "description": "Vegetable seeds, fruit seeds, flower seeds, and saplings.",
-    "image": "https://plus.unsplash.com/premium_photo-1664007711018-d7cb92e664b1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": 120,
-    "oldPrice": 160,
-    "rating": 4.2,
-    "quality": "High"
-  },
-  {
-    "id": 3,
-    "name": "Compost & Soil",
-    "description": "Organic compost, manure, soil mixes, and vermicompost.",
-    "image": "https://plus.unsplash.com/premium_photo-1664527009212-73e907133b02?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": 350,
-    "oldPrice": 500,
-    "rating": 4.0,
-    "quality": "Standard"
-  },
-  {
-    "id": 4,
-    "name": "Farm Machinery & Tools",
-    "description": "Tractors, irrigation equipment, harvesting tools, and hand tools.",
-    "image": "https://images.unsplash.com/photo-1629581904078-15b8f382e7f3?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": 5000,
-    "oldPrice": 6500,
-    "rating": 4.7,
-    "quality": "Premium"
-  },
-  {
-    "id": 5,
-    "name": "Pest & Disease Control",
-    "description": "Pesticides, herbicides, insecticides, fungicides, and bio-control products.",
-    "image": "https://media.istockphoto.com/id/1473137318/photo/treatment-of-roses-from-pests-aphids-and-fungi-remedy-for-roses-from-diseases-and-pests.jpg?s=2048x2048&w=is&k=20&c=5-4K3oZ5an2-MvHRoIq3bGzBzwJ1GFmoFJUjrO4l9kY=",
-    "price": 600,
-    "oldPrice": 800,
-    "rating": 4.3,
-    "quality": "High"
-  },
-  {
-    "id": 6,
-    "name": "Irrigation & Water Systems",
-    "description": "Drip irrigation, sprinklers, pumps, and water storage solutions.",
+    "name": "dripline",
+    "description": "Premium dripline and irrigation solutions designed to deliver water efficiently to your crops. Includes sprinklers, pumps, and water storage systems to optimize water usage. Perfect for both small gardens and large agricultural fields, ensuring healthy and consistent crop growth.",
     "image": "https://media.istockphoto.com/id/1284395653/photo/irrigation-water-flow-from-pipe-to-canal-for-agriculture-fields-slow-motion-water-flash.jpg?s=2048x2048&w=is&k=20&c=1etQ5ctczyxosqFbOqXSh9nd89UrGu1fvZjtXAYFQcE=",
     "price": 2500,
     "oldPrice": 3000,
-    "rating": 4.6,
-    "quality": "Premium"
+    "quality": "Premium",
+    "ratings": 4.7,
+    "category": "Irrigation & Water Systems"
+  },
+  {
+    "id": 3,
+    "name": "biofertil",
+    "description": "Organic biofertilizers and natural farming essentials to improve soil health and crop productivity. Carefully formulated to provide essential nutrients and beneficial microorganisms for sustainable farming. Suitable for a variety of crops, gardens, and organic farming practices.",
+    "image": "https://images.unsplash.com/photo-1492552181161-62217fc3076d?q=80&w=1197&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 750,
+    "oldPrice": 1000,
+    "quality": "Standard",
+    "ratings": 4.2,
+    "category": "Organic Products"
+  },
+  {
+    "id": 4,
+    "name": "tractor",
+    "description": "Durable and reliable farm machinery, including tractors, harvesting tools, and irrigation equipment. Designed to enhance productivity and reduce manual labor for farmers. Perfect for medium to large scale farming operations and suitable for various agricultural applications.",
+    "image": "https://images.unsplash.com/photo-1629581904078-15b8f382e7f3?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 5000,
+    "oldPrice": 5750,
+    "quality": "Premium",
+    "ratings": 4.8,
+    "category": "Farm Machinery & Tools"
+  },
+  {
+    "id": 5,
+    "name": "urea",
+    "description": "Top-quality fertilizers and nutrient supplements, including organic and chemical variants, designed to enhance soil fertility and crop growth. Provides essential minerals and nutrients to ensure strong plant development. Suitable for all types of agricultural crops and garden plants.",
+    "image": "https://plus.unsplash.com/premium_photo-1748176934921-bb88b4d92fd5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 800,
+    "oldPrice": 1000,
+    "quality": "High",
+    "ratings": 4.4,
+    "category": "Fertilizers & Nutrients"
+  },
+  {
+    "id": 6,
+    "name": "sapling",
+    "description": "Fresh vegetable, fruit, and flower saplings and seeds to grow healthy plants. Carefully selected for high germination rates and strong growth. Ideal for home gardens, farms, and urban planting projects, providing a natural start to a successful harvest.",
+    "image": "https://plus.unsplash.com/premium_photo-1664007711018-d7cb92e664b1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 120,
+    "oldPrice": 160,
+    "quality": "Standard",
+    "ratings": 4.1,
+    "category": "Seeds & Plants"
   },
   {
     "id": 7,
-    "name": "Greenhouse & Shade Nets",
-    "description": "Greenhouse kits, shade nets, and protective coverings for plants.",
-    "image": "https://plus.unsplash.com/premium_photo-1663091140962-a196d64fe28b?q=80&w=1131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": 1400,
-    "oldPrice": 1800,
-    "rating": 4.1,
-    "quality": "Standard"
+    "name": "insecticide",
+    "description": "Effective pest and disease control solutions, including herbicides, insecticides, fungicides, and bio-control products. Protects crops from harmful insects and diseases while ensuring safe and healthy yields. Essential for maintaining sustainable and productive farms.",
+    "image": "https://media.istockphoto.com/id/1473137318/photo/treatment-of-roses-from-pests-aphids-and-fungi-remedy-for-roses-from-diseases-and-pests.jpg?s=2048x2048&w=is&k=20&c=5-4K3oZ5an2-MvHRoIq3bGzBzwJ1GFmoFJUjrO4l9kY=",
+    "price": 600,
+    "oldPrice": 800,
+    "quality": "High",
+    "ratings": 4.3,
+    "category": "Pest & Disease Control"
   },
   {
     "id": 8,
-    "name": "Plant Growth Supplements",
-    "description": "Micronutrients, growth hormones, and foliar sprays for healthier crops.",
-    "image": "https://images.unsplash.com/photo-1601582037073-b36af0b8ea81?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhbnQlMjBzdXBwbGVtZW50fGVufDB8fDB8fHww",
-    "price": 450,
-    "oldPrice": 600,
-    "rating": 4.4,
-    "quality": "High"
+    "name": "netting",
+    "description": "Durable greenhouse and shade nets designed to protect plants from harsh sunlight, pests, and extreme weather. Easy to install and maintain, ensuring an optimal environment for plant growth. Perfect for gardens, farms, and large-scale greenhouse setups.",
+    "image": "https://plus.unsplash.com/premium_photo-1663091140962-a196d64fe28b?q=80&w=1131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": 1400,
+    "oldPrice": 1800,
+    "quality": "Standard",
+    "ratings": 4.0,
+    "category": "Greenhouse & Shade Nets"
   },
   {
     "id": 9,
-    "name": "Organic Products",
-    "description": "Natural fertilizers, composts, and organic farming essentials.",
-    "image": "https://images.unsplash.com/photo-1492552181161-62217fc3076d?q=80&w=1197&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": 700,
-    "oldPrice": 950,
-    "rating": 4.5,
-    "quality": "Premium"
+    "name": "foliar",
+    "description": "Advanced plant growth supplements including micronutrients, foliar sprays, and growth hormones. Enhances crop health, increases yield, and ensures stronger, more resilient plants. Perfect for use in both professional agriculture and home gardens for optimal results.",
+    "image": "https://images.unsplash.com/photo-1601582037073-b36af0b8ea81?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhbnQlMjBzdXBwbGVtZW50fGVufDB8fDB8fHww",
+    "price": 450,
+    "oldPrice": 600,
+    "quality": "High",
+    "ratings": 4.2,
+    "category": "Plant Growth Supplements"
   },
   {
     "id": 10,
-    "name": "Harvesting & Storage",
-    "description": "Storage bins, silos, crates, and post-harvest handling equipment.",
+    "name": "silo",
+    "description": "High-quality harvesting and storage solutions including silos, crates, and bins. Designed to maintain produce freshness and protect crops after harvest. Suitable for farms, warehouses, and large agricultural operations to ensure efficient post-harvest management.",
     "image": "https://media.istockphoto.com/id/2180067863/photo/view-of-empty-industrial-material-warehouse.webp?a=1&b=1&s=612x612&w=0&k=20&c=1borBCTN_whFxXec-EkFPKlqRbZnvRi5CRUFNtgfio4=",
     "price": 3200,
     "oldPrice": 4000,
-    "rating": 4.6,
-    "quality": "Premium"
+    "quality": "Premium",
+    "ratings": 4.6,
+    "category": "Harvesting & Storage"
   }
 ]
