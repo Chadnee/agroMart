@@ -13,11 +13,12 @@ export const router = createBrowserRouter([
         index: true,
         element: <Home></Home>
       },
-      {
-        path: "products/:_id",
+      
+    ],
+  },
+  {
+        path: "/products/:_id",
         element: <Product></Product>,
         loader:({params}) => fetch(`http://localhost:5000/products/${params._id}`)
       },
-    ],
-  },
 ]);

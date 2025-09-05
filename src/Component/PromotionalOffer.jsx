@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import useProduct from "./hooks/useProduct";
+import { Link } from "react-router-dom";
 
 const PromotionalOffer = () => {
       const [product] = useProduct()
@@ -52,9 +53,9 @@ const PromotionalOffer = () => {
                 <p className="text-center text-sm font-semibold p-4">{item.name}</p>
                  <p className="text-sm pb-2"><del className="text-stone-600">{item.oldPrice}</del></p>
                 <p className="text-sm "><span className="text-amber-400 pr-1">{item.price}</span> BDT</p>
-                <p className="bg-amber-800 text-white px-5 py-1 mt-5 md:text-xl lg:text-xl text-sm rounded-md font-sans font-bold">
-                  Get
-                </p>
+                <button className="bg-amber-800 text-white px-5 py-1 mt-5 md:text-xl lg:text-xl text-sm rounded-md font-sans font-bold">
+                 <Link to={`/products/${item._id}`}>Get</Link> 
+                </button>
               </div>
             </div>
           </SwiperSlide>
