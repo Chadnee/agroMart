@@ -4,6 +4,7 @@ import ReactStars from "react-rating-stars-component";
 import React, { useEffect, useState } from "react";
 import useProduct from "./hooks/useProduct";
 import ReactiveButton from "reactive-button";
+import { IoReturnDownBackOutline } from "react-icons/io5";
 
 // const customStyles = {
 //   itemShapes: ThinStar,
@@ -44,13 +45,14 @@ const Product = () => {
       {/* main flex */}
       <div className=" lg:w-10/12 w-full flex flex-col">
        {/* child col */}
-      <div className="text-xl py-6 flex  justify-start lg:pl-16 md:pl-16 pl-3 gap-16 items-center bg-gradient-to-tr from-[#4b73b0] via-[#77bee1] to-[#26a7ed] shadow-lg">
-             <span className="font-serif uppercase">
+      <div className="lg:text-xl md:text-xl lg:py-6 md:py-6 py-3 flex  justify-between lg:px-16 md:px-16 px-3 items-center bg-gradient-to-tr from-[#4b73b0] via-[#77bee1] to-[#26a7ed] shadow-lg">
+               <Link className="font-serif flex gap-2 justify-start items-center" to="/">
+               <IoReturnDownBackOutline></IoReturnDownBackOutline><span>Back to Home</span></Link>
+               <span className="font-serif uppercase">
                 <span className=""> Agro</span>
                 <span className="text-amber-800">M</span>
                 <span className="">Art</span>
               </span>
-               <span className="font-serif"><Link to="/">#Home</Link></span>
               
               
       </div>
@@ -116,7 +118,7 @@ const Product = () => {
 />
             </p>
           </div>
-          <img src={image} className="lg:w-2/5 md:w-full h-[420px] lg:pr-12 lg:px-0 px-3 lg:pt-0 pt-5" alt="" />
+          <img src={image} className="lg:w-2/5 md:w-full lg:h-[420px] md:h-[420px] h-[300px] lg:pr-12 lg:px-0 px-3 lg:pt-0 pt-5" alt="" />
         </div>
 
         {/* child col - hidden for small device*/}
@@ -163,7 +165,8 @@ const Product = () => {
       </div>
       {/* main flex */}
       <div className="lg:w-2/12 w-full bg-sky-600 lg:bg-gradient-to-tr from-[#4b73b0] via-[#77bee1] to-[#26a7ed] shadow-lg lg:h-full flex flex-col items-center pl-4 pr-4">
-        <p className="py-10 text-2xl font-thin text-white ">You May Like</p>
+        <p className="py-10 text-2xl font-thin text-white ">You May Like <br />
+        <span className='pb-10 italic font-thin text-sm text-[#3d6b08]'>--“Click to show details above”--</span></p>
      <div className="flex flex-col space-y-5 gap-4 items-center justify-evenly cursor-pointer">
           {product
     .sort(() => Math.random() - 0.5) // shuffle randomly
@@ -181,8 +184,9 @@ const Product = () => {
 
        {/* child col- only for small device*/}
         <div className="lg:hidden md:hidden block ">
-            <div className="text-sm bg-gradient-to-tr from-[#2d76ca] via-[#5ba0ee] to-[#26a7ed] shadow-lg flex flex-col justify-between items-center gap-24 py-12 px-3">
-          <div className="text-white tracking-tighter flex flex-col justify-center items-center">
+            <div className="text-sm bg-sky-600 shadow-lg flex flex-col justify-between items-center gap-24 py-16 px-3">
+            {/* <div className="text-sm bg-gradient-to-tr from-[#2d76ca] via-[#5ba0ee] to-[#26a7ed] shadow-lg flex flex-col justify-between items-center gap-24 py-16 px-3"> */}
+          <div className="text-white font-semibold flex flex-col justify-center items-center">
             <p>Trusted by over 3,50,000 clients</p>
             <p>Worldwide since 2008</p>
           </div>
@@ -207,7 +211,7 @@ const Product = () => {
             <p className="">Best Selling Products</p>
             <p className="">
               All rights are reserved by
-              <span className="font-serif uppercase">
+             <span className="font-serif uppercase">
                 <span className=""> Agro</span>
                 <span className="text-amber-800">M</span>
                 <span className="">Art</span>

@@ -6,6 +6,8 @@ import { TbCategory2 } from "react-icons/tb";
 import { SiProcesswire } from "react-icons/si";
 import { FaFaceLaughBeam } from "react-icons/fa6";
 import { IoFlashSharp } from "react-icons/io5";
+import { FaRegLightbulb } from "react-icons/fa";
+import { AiFillQuestionCircle } from "react-icons/ai";
 
 const Navbar = () => {
   const [openSubmenu, setOpenSubMenu] = useState(false); // kept as boolean as you wanted
@@ -37,24 +39,24 @@ const Navbar = () => {
   const navItem = [
     { id: "home", label: "Home", icon: <FaHome /> },
     { id: "category", label: "Category", icon: <TbCategory2 /> },
-     { id: "flashSale", label: "Flash Sale", icon: <IoFlashSharp/> },
+     { id: "flashSale", label: "Flash_Sale", icon: <IoFlashSharp/> },
     {
       id: "overview",
       label: "Overview",
       icon: <FaFaceLaughBeam />,
       subMenu: [
-        { id: "about", label: "About", icon: <FaFaceLaughBeam /> },
-        { id: "highLights", label: "Highlights", icon: <FaFaceLaughBeam /> },
+        { id: "about", label: "About", icon: <AiFillQuestionCircle /> },
+        { id: "highLights", label: "Highlights", icon: <FaRegLightbulb /> },
       ],
     },
-    { id: "process", label: "Process", icon: <SiProcesswire /> },
+    // { id: "process", label: "Process", icon: <SiProcesswire /> },
   ];
 
   return (
     //via-[#52a6d0]
     <div className="flex lg:flex-row-reverse md:flex-row-reverse justify-between items-center font-serif max-w-screen backdrop-blur-sm bg-gradient-to-tr from-[#4b73b0] via-[#77bee1] to-[#26a7ed] shadow-lg fixed top-0 md:px-16 lg:px-16 py-3 left-0 w-full z-10">
       {/* <div className="flex lg:flex-row-reverse md:flex-row-reverse justify-between items-center font-serif max-w-screen-2xl backdrop-blur-sm bg-gradient-to-tr from-[#5c97f01a] via-[#5c97f01a] to-[#26a7ed1a] shadow-md fixed top-0 md:px-16 lg:px-16 py-3 left-0 w-full z-10"> */}
-      <div className="lg:flex md:flex hidden justify-end gap-48 w-1/2">
+      <div className="lg:flex md:flex hidden justify-end gap-20 w-1/2">
         <ul className="flex justify-between items-center space-x-6 text-cyan-800 font-semibold">
           {navItem.map((item) => (
             <li className="relative" key={item.id} ref={submenuRef}>
@@ -98,8 +100,8 @@ const Navbar = () => {
           ))}
         </ul>
         <button
-          className="text-[#1e4f68] font-semibold border-3 border-amber-800 relative px-10 text-[17px] py-1 rounded-md shadow-lg 
-            duration-1000 easy-in-out hover:bg-amber-800 hover:text-white hover:shadow-lg hover:scale-105"
+          className="className='lg:px-10 md:px-10 px-3 lg:text-[17px] md:text-[17px] text-sm py-1 overflow-hidden  bg-amber-800 text-white rounded-md shadow-lg
+            duration-1000 easy-in-out hover:bg-yellow-600 hover:shadow-lg hover:scale-105"
         >
           Contact
         </button>

@@ -19,6 +19,6 @@ export const router = createBrowserRouter([
   {
         path: "/products/:_id",
         element: <Product></Product>,
-        loader:({params}) => fetch(`http://localhost:5000/products/${params._id}`)
+        loader:({params}) => fetch(`https://agromart-server.vercel.app/products/${params._id}`)
       },
 ]);
