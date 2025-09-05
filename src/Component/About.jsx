@@ -5,7 +5,7 @@ import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 const About = () => {
   return (
    <div className="" id="about">
-     <div className="flex flex-col items-center mt-28 lg:w-6/12 md:w-6/12 justify-center lg:mx-auto md:mx-auto mx-3">
+     <div className="flex flex-col items-center lg:mt-28 md:mt-28 mt-24 lg:w-6/12 md:w-6/12 justify-center lg:mx-auto md:mx-auto mx-3">
       <p className="pb-2 font-bold text-2xl font-serif">About</p>
       <span className="pb-4 italic font-thin text-sm text-[#3d6b08]">
         --“Trusted Products for Better Harvests”--

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="flex lg:flex-row md:flex-row flex-col md:justify-between lg:justify-between mt-28 lg:px-16 md:px-16 px-4 py-16 bg-sky-200 shadow-lg text-cyan-800 items-center p-4">
+        <div className="flex lg:flex-row md:flex-row flex-col md:justify-between lg:justify-between mt-28 lg:px-16 md:px-16 px-4 py-16 bg-sky-100 shadow-lg text-cyan-800 items-center p-4">
   <div className="flex flex-col justify-center gap-4 items-center mb-12">
     <svg
       width="36"

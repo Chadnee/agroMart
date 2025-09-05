@@ -7,7 +7,7 @@ const FlashProduct = () => {
   return (
     <div
       id="flashSale"
-      className="flex flex-col items-center justify-center w-full lg:w-4/5 md:w-4/5 mx-auto pt-28"
+      className="flex flex-col items-center justify-center w-full lg:w-4/5 md:w-4/5 mx-auto lg:mt-28 md:mt-28 mt-24"
     >
       <p className="pb-2 font-bold text-2xl font-serif">Flash Sale</p>
       <span className="pb-10 italic font-thin text-sm text-[#3d6b08]">

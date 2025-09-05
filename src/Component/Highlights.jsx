@@ -7,7 +7,7 @@ import { CiDollar } from "react-icons/ci";
 
 const Highlights = () => {
   return (
-    <div id = "highLights" className="flex flex-col lg:w-10/12 md:w-10/12 mt-32 justify-center items-center lg:mx-auto mx-3">
+    <div id = "highLights" className="flex flex-col lg:w-10/12 md:w-10/12 lg:mt-28 md:mt-28 mt-28 justify-center items-center lg:mx-auto mx-3">
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-5 justify-center items-stretch">
        <div className="relative">
   <img src={img} className="lg:h-[550px] md:h-[550px] h-[450px] w-full object-cover" alt="" />

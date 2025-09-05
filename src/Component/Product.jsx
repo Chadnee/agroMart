@@ -46,7 +46,7 @@ const Product = () => {
       <div className=" lg:w-10/12 w-full flex flex-col">
        {/* child col */}
       <div className="lg:text-xl md:text-xl lg:py-6 md:py-6 py-3 flex  justify-between lg:px-16 md:px-16 px-3 items-center bg-gradient-to-tr from-[#4b73b0] via-[#77bee1] to-[#26a7ed] shadow-lg">
-               <Link className="font-serif flex gap-2 justify-start items-center" to="/">
+               <Link className="font-serif flex gap-2 justify-start items-center text-[17px]" to="/">
                <IoReturnDownBackOutline></IoReturnDownBackOutline><span>Back to Home</span></Link>
                <span className="font-serif uppercase">
                 <span className=""> Agro</span>
@@ -165,8 +165,9 @@ const Product = () => {
       </div>
       {/* main flex */}
       <div className="lg:w-2/12 w-full bg-sky-600 lg:bg-gradient-to-tr from-[#4b73b0] via-[#77bee1] to-[#26a7ed] shadow-lg lg:h-full flex flex-col items-center pl-4 pr-4">
-        <p className="py-10 text-2xl font-thin text-white ">You May Like <br />
-        <span className='pb-10 italic font-thin text-sm text-[#3d6b08]'>--“Click to show details above”--</span></p>
+        <p className="py-10 text-2xl font-thin text-white flex flex-col items-center justify-center">
+           <span>You May Like</span>
+        <span className='pb-10 italic font-thin text-sm text-amber-400'>--“Click to show details above”--</span></p>
      <div className="flex flex-col space-y-5 gap-4 items-center justify-evenly cursor-pointer">
           {product
     .sort(() => Math.random() - 0.5) // shuffle randomly
