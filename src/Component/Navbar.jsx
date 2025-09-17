@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
 import logo from "../assets/images/logo.jpg";
+import rice from "../assets/images/rice.png"
 import { FaHome, FaList } from "react-icons/fa";
 import { TbCategory2 } from "react-icons/tb";
 import { SiProcesswire } from "react-icons/si";
@@ -45,7 +46,7 @@ const Navbar = () => {
       label: "Overview",
       icon: <FaFaceLaughBeam />,
       subMenu: [
-        { id: "about", label: "About", icon: <AiFillQuestionCircle /> },
+        { id: "services", label: "Services", icon: <AiFillQuestionCircle /> },
         { id: "highLights", label: "Highlights", icon: <FaRegLightbulb /> },
       ],
     },
@@ -54,17 +55,17 @@ const Navbar = () => {
 
   return (
     //via-[#52a6d0]
-    <div className="flex lg:flex-row-reverse md:flex-row-reverse justify-between items-center font-serif max-w-screen backdrop-blur-sm bg-gradient-to-tr from-[#4b73b0] via-[#77bee1] to-[#26a7ed] shadow-lg fixed top-0 md:px-16 lg:px-16 py-3 left-0 w-full z-10">
+    <div className="flex lg:flex-row-reverse md:flex-row-reverse justify-between items-center  max-w-screen bg-[#006838]/90 shadow-lg fixed top-0 md:px-20 lg:px-20 lg:py-4  py-2 md:py-4 left-0 w-full z-10">
       {/* <div className="flex lg:flex-row-reverse md:flex-row-reverse justify-between items-center font-serif max-w-screen-2xl backdrop-blur-sm bg-gradient-to-tr from-[#5c97f01a] via-[#5c97f01a] to-[#26a7ed1a] shadow-md fixed top-0 md:px-16 lg:px-16 py-3 left-0 w-full z-10"> */}
       <div className="lg:flex md:flex hidden justify-end gap-20 w-1/2">
-        <ul className="flex justify-between items-center space-x-6 text-cyan-800 font-semibold">
+        <ul className="flex justify-between items-center space-x-6 text-white font-serif">
           {navItem.map((item) => (
             <li className="relative" key={item.id} ref={submenuRef}>
               {item.subMenu ? (
                 <>
                   <button
                     onClick={() => setOpenSubMenu((prev) => !prev)} // kept original boolean logic
-                    className="text-[#1e4f68] font-semibold flex gap-1 items-center"
+                    className="text-white font- flex gap-1 items-center"
                   >
                     <span>{item.icon}</span>
                     <span>{item.label}</span>
@@ -75,7 +76,7 @@ const Navbar = () => {
                       {item.subMenu.map((sub) => (
                         <li key={sub.id}>
                           <a
-                            className="text-[#1e4f68] flex gap-1 items-center cursor-pointer"
+                            className="text-white flex gap-1 items-center cursor-pointer"
                              href={`#${sub.id}`}
                           >
                             <span>{sub.icon}</span>
@@ -88,7 +89,7 @@ const Navbar = () => {
                 </>
               ) : (
                 <a
-                  className="text-[#1e4f68] font-semibold flex gap-1 items-center cursor-pointer"
+                  className="text-white font-serif flex gap-1 items-center cursor-pointer"
                 
                   href={`#${item.id}`}
                 >
@@ -99,12 +100,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button
+        {/* <button
           className="className='lg:px-10 md:px-10 px-3 lg:text-[17px] md:text-[17px] text-sm py-1 overflow-hidden  bg-amber-800 text-white rounded-md shadow-lg
             duration-1000 easy-in-out hover:bg-yellow-600 hover:shadow-lg hover:scale-105"
         >
           Contact
-        </button>
+        </button> */}
       </div>
 
       <div className="block md:hidden lg:hidden relative w-full" >
@@ -121,7 +122,7 @@ const Navbar = () => {
                   <div>
                     <button
                       onClick={() => setOpenMobileSubMenu((prev) => !prev)}
-                      className="text-[#1e4f68] font-semibold gap-48  flex justify-between rounded items-center cursor-pointer"
+                      className="text-[#1e4f68] gap-48  flex justify-between rounded items-center cursor-pointer"
                     >
                       <span>{item.label}</span>
                       <span>{openMobileSubmenu ? "▲" : "▼"}</span>
@@ -136,7 +137,7 @@ const Navbar = () => {
                           >
                              <a
                       href={`#${sub.id}`}
-                      className="text-[#1e4f68] font-semibold w-full flex gap-48 cursor-pointer py-2 items-center"
+                      className="text-[#1e4f68] w-full flex gap-48 cursor-pointer py-2 items-center"
                     >
                       <span>{sub.label}</span>
                       <span>{sub.icon}</span>
@@ -151,7 +152,7 @@ const Navbar = () => {
                     <a
                      
                       href={`#${item.id}`}
-                      className="text-[#1e4f68] font-semibold w-full flex gap-48 cursor-pointer py-2 items-center"
+                      className="text-[#1e4f68]  w-full flex gap-48 cursor-pointer py-2 items-center"
                     >
                       <span>{item.label}</span>
                       <span>{item.icon}</span>
@@ -166,12 +167,14 @@ const Navbar = () => {
         }
       </div>
 
-      <div className="w-1/2">
-        <h3 className="font-serif uppercase lg:text-3xl md:text-3xl text-xl pr-3 md:pr-0 lg:pr-0">
-          <span className="">Agro</span>
+      <div className="w-1/2 flex justify-start items-center gap-2">
+          <img src={rice} className="h-[10px]"  alt="" />
+         <p className="text-white font-serif">agromart.lio</p>
+        {/* <h3 className="font-serif uppercase lg:text-3xl md:text-3xl text-xl pr-3 md:pr-0 lg:pr-0">
+          <span className="text-white">Agro</span>
           <span className="text-amber-800">M</span>
-          <span className="">Art</span>
-        </h3>
+          <span className="text-white">Art</span>
+        </h3> */}
       </div>
     </div>
   );

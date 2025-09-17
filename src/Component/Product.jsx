@@ -1,7 +1,7 @@
 import { Rating, ThinStar } from "@smastrom/react-rating";
 import { Link, useLoaderData } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import useProduct from "./hooks/useProduct";
 import ReactiveButton from "reactive-button";
 import { IoReturnDownBackOutline } from "react-icons/io5";
@@ -28,7 +28,7 @@ const Product = () => {
     ratings,
     quality,
   } = item;
-  console.log(ratings);
+  //console.log(ratings);
 
 // useEffect(() => {
 //   if (!productLoading && product.length > 0) {

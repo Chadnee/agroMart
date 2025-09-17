@@ -1,6 +1,10 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tailwindcss";
 @plugin "daisyui";
+
+
 
 /* কাস্টম রিসেট */
 /* *, ::before, ::after {
@@ -13,6 +17,16 @@ html, body, #root {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+}
+
+:root {
+  --font-sans: 'Poppins', sans-serif;
+}
+
+/* Allow slides content to overflow outside Swiper */
+
+.custom-swiper{
+  overflow: visible !important;
 }
 
 

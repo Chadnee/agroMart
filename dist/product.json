@@ -8,6 +8,7 @@
     "oldPrice": 320,
     "quality": "High",
     "ratings": 4.5,
+    "categoryImage": "https://w7.pngwing.com/pngs/835/545/png-transparent-a-pile-of-soil-s-black-soil-mud-soil-thumbnail.png",
     "category": "Compost & Soil"
   },
   {
@@ -19,6 +20,7 @@
     "oldPrice": 3000,
     "quality": "Premium",
     "ratings": 4.7,
+    "categoryImage": "https://w7.pngwing.com/pngs/149/450/png-transparent-solar-powered-pump-electric-motor-pump-jet-water-brushless-dc-electric-motor-angle-electricity-impeller-thumbnail.png",
     "category": "Irrigation & Water Systems"
   },
   {
@@ -30,6 +32,7 @@
     "oldPrice": 1000,
     "quality": "Standard",
     "ratings": 4.2,
+    "categoryImage": "https://w7.pngwing.com/pngs/60/651/png-transparent-rgb-color-model-grass-gis-compost-color-plant-stem-grass-thumbnail.png",
     "category": "Organic Products"
   },
   {
@@ -41,6 +44,7 @@
     "oldPrice": 5750,
     "quality": "Premium",
     "ratings": 4.8,
+    "categoryImage": "https://w7.pngwing.com/pngs/378/985/png-transparent-jcb-backhoe-loader-heavy-machinery-tractor-company-engineering-mode-of-transport-thumbnail.png",
     "category": "Farm Machinery & Tools"
   },
   {
@@ -52,6 +56,7 @@
     "oldPrice": 1000,
     "quality": "High",
     "ratings": 4.4,
+    "categoryImage": "https://w7.pngwing.com/pngs/942/283/png-transparent-organic-food-organic-fertilizer-fertilisers-manure-organic-cotton-others-thumbnail.png",
     "category": "Fertilizers & Nutrients"
   },
   {
@@ -63,6 +68,7 @@
     "oldPrice": 160,
     "quality": "Standard",
     "ratings": 4.1,
+    "categoryImage": "https://w7.pngwing.com/pngs/963/8/png-transparent-chia-seed-nutrient-seed-oil-seeds-miscellaneous-food-nutrition-thumbnail.png",
     "category": "Seeds & Plants"
   },
   {
@@ -74,6 +80,7 @@
     "oldPrice": 800,
     "quality": "High",
     "ratings": 4.3,
+    "categoryImage": "https://w7.pngwing.com/pngs/852/850/png-transparent-aerosol-spray-aerosol-paint-toilet-spray-bottle-painting-spray-furniture-service-hand-thumbnail.png",
     "category": "Pest & Disease Control"
   },
   {
@@ -85,6 +92,7 @@
     "oldPrice": 1800,
     "quality": "Standard",
     "ratings": 4.0,
+    "categoryImage": "https://w7.pngwing.com/pngs/276/61/png-transparent-greenhouse-shelf-garden-roof-patio-greenhouse-glass-outdoor-structure-patio-thumbnail.png",
     "category": "Greenhouse & Shade Nets"
   },
   {
@@ -96,6 +104,7 @@
     "oldPrice": 600,
     "quality": "High",
     "ratings": 4.2,
+    "categoryImage": "https://w7.pngwing.com/pngs/817/607/png-transparent-plant-growth-cycle-set-thumbnail.png",
     "category": "Plant Growth Supplements"
   },
   {
@@ -107,6 +116,7 @@
     "oldPrice": 4000,
     "quality": "Premium",
     "ratings": 4.6,
+    "categoryImage": "https://w7.pngwing.com/pngs/982/164/png-transparent-india-agriculture-rural-area-entrepreneurship-business-land-wheat-harvest-illustration-company-harvest-grass-thumbnail.png",
     "category": "Harvesting & Storage"
   }
 ]

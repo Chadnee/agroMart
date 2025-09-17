@@ -1,26 +1,31 @@
 import React from "react";
-import { promotionalOfferProducts } from "../share/constant/Constant";
+import like from '../assets/images/like.png';
+import { RiArrowRightSLine } from "react-icons/ri";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/navigation"; // Import navigation styles
+import { Navigation } from "swiper/modules"; // Import navigation module
 import useProduct from "./hooks/useProduct";
 import { Link } from "react-router-dom";
+import ReactStars from "react-rating-stars-component";
 
 const PromotionalOffer = () => {
       const [product] = useProduct()
 
   return (
-    <div className="flex flex-col lg:mt-28 md:mt-28 mt-20 items-center lg:mx-auto md:mx-auto md:w-3/5 lg:w-4/5 w-3/5 mx-auto justify-center">
+    <div className="relative flex flex-col lg:mt-28 md:mt-28 mt-20 items-center mx-5 md:mx-20  lg:mx-20 justify-center">
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        className="w-full px-16"
+       navigation={{
+          nextEl: ".custom-next", // Only right arrow
+          prevEl: null, // Disable left arrow
+        }}
+        modules={[Navigation]}
+        className="w-full px-10"
           breakpoints={{
     320: {       // screens >= 320px
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     640: {       // screens >= 640px
@@ -28,15 +33,15 @@ const PromotionalOffer = () => {
       spaceBetween: 15,
     },
     1024: {      // screens >= 1024px
-      slidesPerView: 4,
+      slidesPerView: 5,
       spaceBetween: 15,
     },
   }}
       >
         {product.slice(0,6).map((item) => (
-          <SwiperSlide key={item.id} className="flex justify-center">
-            <div className="shadow-lg transition-shadow w-full ">
-              <p
+          <SwiperSlide key={item.id} className="flex justify-center items-center rounded-2xl shadow-2xl">
+            <Link to={`/products/${item._id}`} className="shadow-lg  transition-shadow w-full ">
+              {/* <p
                 style={{
                   borderTopLeftRadius: "50px",
                   borderTopRightRadius: "0",
@@ -46,21 +51,38 @@ const PromotionalOffer = () => {
                 className="bg-amber-800 text-white w-full text-center px-5 py-2 lg:text-2xl md:text-2xl text-[16px] font-sans font-bold"
               >
                 {Math.round(((item.oldPrice - item.price) * 100) / item.oldPrice)}% OFF
-              </p>
+              </p> */}
 
-              <div className="lg:p-10 md:p-10 p-7 flex flex-col items-center ">
-                <img src={item.image} className="lg:h-[200px] md:h-[200px] h-[80px]" alt={item.name} />
-                <p className="text-center text-sm font-semibold p-4">{item.name}</p>
-                 <p className="text-sm pb-2"><del className="text-stone-600">{item.oldPrice}</del></p>
-                <p className="text-sm "><span className="text-amber-400 pr-1">{item.price}</span> BDT</p>
-                <button className="bg-amber-800 text-white px-5 py-1 mt-5 md:text-xl lg:text-xl text-sm rounded-md font-sans font-bold">
-                 <Link to={`/products/${item._id}`}>Get</Link> 
-                </button>
-              </div>
-            </div>
+              <div className="lg:p-3 md:p-3 px-7 space-y-3 flex flex-col items-start justify-center ">
+                 <div className="relative">
+                    <img src={item.image} className="lg:h-[230px] md:h-[230px] h-[80px] " alt={item.name} />
+                    <p className="absolute top-2  left-2 px-2 bg-stone-600 text-white ronded-lg text-[10px]">
+                      {Math.round(((item.oldPrice - item.price) * 100) / item.oldPrice)}% Off
+                    </p>
+                    <p className="absolute bottom-2 right-2 bg-white rounded-full"><img src={like} className="h-[18px]" alt="" /></p>
+                 </div>
+                <p className="text-center text-sm text-stone-500">{item.name}</p>
+                <p className="font-semibold">{item.category}</p>
+                 <ReactStars
+                                 count={5}
+                                 size={16}
+                                 activeColor="#ffd700"
+                                 value={item.ratings}
+                                 inactiveFillColor="#2c3973"
+                                 isHalf={true} // ✅ allows half stars
+                                 edit={false}
+                               />
+                 <p className="flex justify-center gap-6 items-center">
+                  <span className="text-sm "><span className="text-amber-400 pr-1">{item.price}</span> BDT</span>
+                 <del className="text-orange-700 text-sm">{item.oldPrice}</del></p>
+                   </div>
+            </Link> 
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="custom-next absolute -right-10 -bottom-12 -translate-y-1/2 cursor-pointer bg-gray-100 px-2 py-2 text-stone-600 rounded-full shadow-md z-10">
+        <RiArrowRightSLine></RiArrowRightSLine>
+      </div>
     </div>
   );
 };

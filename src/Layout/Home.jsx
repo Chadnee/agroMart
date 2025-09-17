@@ -6,21 +6,26 @@ import PromotionalOffer from "../Component/promotionalOffer";
 import Process from "../Component/Process";
 import Footer from "../Component/Footer";
 import Highlights from "../Component/Highlights";
-import Trial from "../Component/trial";
-import About from "../Component/about";
 import FlashProduct from "../Component/FlashSale/FlashProduct";
 import { Outlet } from "react-router-dom";
+import Works from "../Component/works";
+import Services from "../Component/Services";
+import ContactBanner from "../Component/ContactBanner";
+import Employee from "../Component/employee";
 
 const Home = () => {
   return (
     <div className="">
       
       <Hero id="home"></Hero>
-      <PromotionalOffer></PromotionalOffer>
       <Category id="category"></Category>
-      <FlashProduct id="flashSale"></FlashProduct>
-      <About id="about"></About>
-      <Process id="process"></Process>
+      {/* <FlashProduct id="flashSale"></FlashProduct> */}
+      <Services id="services"></Services>
+      <PromotionalOffer></PromotionalOffer>
+       <Works></Works>
+      {/* <Process id="process"></Process> */}
+      <ContactBanner></ContactBanner>
+      <Employee></Employee>
       <Highlights id="highLights"></Highlights>
     </div>
   );

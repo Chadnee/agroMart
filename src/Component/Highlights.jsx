@@ -84,11 +84,11 @@ const Highlights = () => {
                 <span className="text-white text-xl -mb-2">
                   <BsTelephoneFill></BsTelephoneFill>
                 </span>
-                <p>
+                <span>
                   <span className=" font-semibold uppercase">Call Us</span>
                   <br />
                   <span className="">+880 0924-736589</span>
-                </p>
+                </span>
               </p>
             </div>
             <div className="flex flex-col justify-evenly text-sm  items-center bg-sky-100">
