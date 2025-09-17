@@ -13,7 +13,7 @@ const PromotionalOffer = () => {
       const [product] = useProduct()
 
   return (
-    <div className="relative flex flex-col lg:mt-28 md:mt-28 mt-20 items-center mx-5 md:mx-20  lg:mx-20 justify-center">
+    <div className="relative flex flex-col mt-44 items-center mx-5 md:mx-20  lg:mx-20 justify-center">
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
